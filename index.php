@@ -1,4 +1,6 @@
-<?php include('send_mail.php') ?>
+<?php
+
+include('send_mail.php'); ?>
 <!DOCTYPE html>
 <html lang="en-US">
 
