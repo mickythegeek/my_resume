@@ -1,6 +1,3 @@
-<?php
-
-include('send_mail.php'); ?>
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -94,6 +91,15 @@ include('send_mail.php'); ?>
 
 			<!-- Section About -->
 			<section id="about" class="about">
+				<div id="statusMessage">
+					<?php
+					if (!empty($message)) {
+					?>
+						<p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
+					<?php
+					}
+					?>
+				</div>
 
 				<div class="section-header">
 					<h2>About Me</h2>
@@ -378,23 +384,7 @@ include('send_mail.php'); ?>
 
 
 				<!-- Contact Form -->
-				<?php
-				if (!empty($_POST["submit"])) {
-					$name = $_POST["name"];
-					$email = $_POST["email"];
-					$subject = $_POST["subject"];
-					$msg_content = $_POST["msg_content"];
 
-					$conn = mysqli_connect("localhost", "root", "", "resumeresponse") or die("Connection Error: " . mysqli_error($conn));
-					mysqli_query($conn, "INSERT INTO contacts (name, email,subject,msg_content) VALUES ('" . $name . "', '" . $email . "','" . $subject . "','" . $msg_content . "')");
-					$insert_id = mysqli_insert_id($conn);
-					//if(!empty($insert_id)) {
-					$message = "Your contact information is saved successfully.";
-					$type = "success";
-				}
-
-
-				?>
 				<form method="post" name="contactForm" id="contactForm" enctype="multipart/form-data onsubmit=" return validateForm() action="">
 
 					<div class=" row">
@@ -438,18 +428,27 @@ include('send_mail.php'); ?>
 					</div><!-- Row end -->
 					<div>
 						<input type="submit" name="submit" id="submit" value="Send Message" class="btn btn-default pull-left"><!-- Send Button -->
-						<div id="statusMessage">
-							<?php
-							if (!empty($message)) {
-							?>
-								<p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
-							<?php
-							}
-							?>
-						</div>
+
 					</div>
 
 				</form>
+				<?php
+				if (!empty($_POST["submit"])) {
+					$name = $_POST["name"];
+					$email = $_POST["email"];
+					$subject = $_POST["subject"];
+					$msg_content = $_POST["msg_content"];
+
+					// $conn = mysqli_connect("localhost", "root", "", "resumeresponse") or die("Connection Error: " . mysqli_error($conn));
+					// mysqli_query($conn, "INSERT INTO contacts (name, email,subject,msg_content) VALUES ('" . $name . "', '" . $email . "','" . $subject . "','" . $msg_content . "')");
+					// $insert_id = mysqli_insert_id($conn);
+					//if(!empty($insert_id)) {
+					$message = "Your contact information is saved successfully.";
+					$type = "success";
+				}
+
+
+				?>
 
 
 				<!-- Contact Form end -->
