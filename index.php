@@ -152,7 +152,7 @@ include('send_mail.php'); ?>
 							</div>
 							<div class="col-md-6 col-sm-6 col-xs-12 item">
 								<div class="skill-info clearfix">
-									<h3 class="pull-left">Boots127.0.0.1trap V</h3>
+									<h3 class="pull-left">Bootstrap V</h3>
 									<span class="pull-right">65%</span>
 								</div>
 								<div class="progress">
