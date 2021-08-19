@@ -1,3 +1,4 @@
+<?php include('send_mail.php') ?>
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -56,7 +57,7 @@
 			<!-- Social Icons -->
 			<div class="social-icons">
 				<ul>
-					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="https://twitter.com/micky_thegeek?s=08"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 					<li><a href="https://web.facebook.com/david.michaelolukayode.3" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li><a href="https://github.com/mickythegeek" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 				</ul>
@@ -94,9 +95,7 @@
 
 				<div class="section-header">
 					<h2>About Me</h2>
-					<a href="#" class="resume-download" data-toggle="tooltip" data-placement="bottom" title="Download">
-						<i class="fa fa-download" aria-hidden="true"> </i> Download Resume
-					</a>
+
 				</div>
 
 				<!-- Intro -->
@@ -120,56 +119,128 @@
 
 				<!-- Skills -->
 				<div class="skills">
-
-					<div class="row">
-
-						<div class="col-md-6 col-sm-6 col-xs-12 item">
-							<div class="skill-info clearfix">
-								<h3 class="pull-left">PHP</h3>
-								<span class="pull-right">65%</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6 col-sm-6 col-xs-12 item">
-							<div class="skill-info clearfix">
-								<h3 class="pull-left">JavaScript</h3>
-								<span class="pull-right">55%</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:55%">
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6 col-sm-6 col-xs-12 item">
-							<div class="skill-info clearfix">
-								<h3 class="pull-left">Photoshop</h3>
-								<span class="pull-right">50%</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6 col-sm-6 col-xs-12 item">
-							<div class="skill-info clearfix">
-								<h3 class="pull-left">Illustrator</h3>
-								<span class="pull-right">60%</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-								</div>
-							</div>
-						</div>
-
-
+					<div class="section-header">
+						<h2>SKILLS</h2>
 
 					</div>
+
+					<div class="intro">
+						<div class="row">
+
+							<div class="col-md-6 col-sm-6 col-xs-12 item">
+								<div class="skill-info clearfix">
+									<h3 class="pull-left">HTML5</h3>
+									<span class="pull-right">90%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6 col-xs-12 item">
+								<div class="skill-info clearfix">
+									<h3 class="pull-left">CSS3</h3>
+									<span class="pull-right">65%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12 item">
+								<div class="skill-info clearfix">
+									<h3 class="pull-left">Boots127.0.0.1trap V</h3>
+									<span class="pull-right">65%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6 col-xs-12 item">
+								<div class="skill-info clearfix">
+									<h3 class="pull-left">PHP</h3>
+									<span class="pull-right">65%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12 item">
+								<div class="skill-info clearfix">
+									<h3 class="pull-left">MySQL</h3>
+									<span class="pull-right">60%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6 col-xs-12 item">
+								<div class="skill-info clearfix">
+									<h3 class="pull-left">JavaScript</h3>
+									<span class="pull-right">55%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:55%">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6 col-xs-12 item">
+								<div class="skill-info clearfix">
+									<h3 class="pull-left">JQUERY</h3>
+									<span class="pull-right">50%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6 col-xs-12 item">
+								<div class="skill-info clearfix">
+									<h3 class="pull-left">AJAX</h3>
+									<span class="pull-right">45%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:45%">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6 col-xs-12 item">
+								<div class="skill-info clearfix">
+									<h3 class="pull-left">Photoshop</h3>
+									<span class="pull-right">50%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6 col-xs-12 item">
+								<div class="skill-info clearfix">
+									<h3 class="pull-left">Illustrator</h3>
+									<span class="pull-right">60%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+					</div>
+
+
 
 				</div>
 				<!-- Skills end -->
@@ -193,7 +264,10 @@
 						<div class="top-item resume-item">
 							<h2>Software Developer(Intern)</h2>
 							<span>LIVEPETAL SYSTEMS LTD | APRIL, 2021 - PRESENT</span>
-							<p>Lorem ipsum dolor sit amet.</p>
+							<p>
+								Responsible for contributing to software design and software development. Also, collaborating with other team members in creating secure and reliable software solutions.
+
+							</p>
 						</div>
 					</div>
 
@@ -299,53 +373,88 @@
 					<h2>Get In Touch</h2>
 				</div>
 
-				<!-- Contact Form -->
-				<form method="post" action="https://www.designstub.com/demos/onepageresume/form/contactform.php">
 
-					<div class="row">
+
+				<!-- Contact Form -->
+				<?php
+				if (!empty($_POST["submit"])) {
+					$name = $_POST["name"];
+					$email = $_POST["email"];
+					$subject = $_POST["subject"];
+					$msg_content = $_POST["msg_content"];
+
+					$conn = mysqli_connect("localhost", "root", "", "resumeresponse") or die("Connection Error: " . mysqli_error($conn));
+					mysqli_query($conn, "INSERT INTO contacts (name, email,subject,msg_content) VALUES ('" . $name . "', '" . $email . "','" . $subject . "','" . $msg_content . "')");
+					$insert_id = mysqli_insert_id($conn);
+					//if(!empty($insert_id)) {
+					$message = "Your contact information is saved successfully.";
+					$type = "success";
+				}
+
+
+				?>
+				<form method="post" name="contactForm" id="contactForm" enctype="multipart/form-data onsubmit=" return validateForm() action="">
+
+					<div class=" row">
 						<!-- Row -->
 
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<!-- Name input -->
 							<div class="form-group">
-								<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Your Name" required>
+								<input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
 							</div>
 						</div>
 
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<!-- Email input -->
 							<div class="form-group">
-								<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Your Email" required>
+								<input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
 							</div>
 						</div>
 
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<!-- Phone input -->
 							<div class="form-group">
-								<input type="text" class="form-control" name="InputPhone" id="InputPhone" placeholder="Phone (optional)">
+								<input type="text" class="form-control" name="phone" id="phone" placeholder="Phone (optional)">
 							</div>
 						</div>
 
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<!-- Subject input -->
 							<div class="form-group">
-								<input type="text" class="form-control" id="InputSubject" name="InputSubject" placeholder="Subject">
+								<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
 							</div>
 						</div>
 
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<!-- Message textarea -->
 							<div class="form-group">
-								<textarea name="InputMessage" id="InputMessage" class="form-control" rows="6" placeholder="Message" required></textarea>
+								<textarea name="msg_content" id="msg_content" class="form-control" rows="3" placeholder="Message" required></textarea>
 							</div>
 						</div>
 
 					</div><!-- Row end -->
-
-					<input type="submit" name="submit" id="submit" value="Send Message" class="btn btn-default pull-left"><!-- Send Button -->
+					<div>
+						<input type="submit" name="submit" id="submit" value="Send Message" class="btn btn-default pull-left"><!-- Send Button -->
+						<div id="statusMessage">
+							<?php
+							if (!empty($message)) {
+							?>
+								<p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
+							<?php
+							}
+							?>
+						</div>
+					</div>
 
 				</form>
+
+
 				<!-- Contact Form end -->
+
+
+
+
 
 			</section>
 			<!-- Section Contact end -->
@@ -367,6 +476,8 @@
 	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<script type="text/javascript" src="assets/js/smoothscroll.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="assets/js/form.js"></script>
 
 </body>
 
