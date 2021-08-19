@@ -9,7 +9,7 @@ if (!empty($_POST["submit"])) {
     // $mailHeaders = "From: " . $name . "<" . $email . ">\r\n";
     // if (mail($toEmail, $subject, $msg_content, $mailHeaders)) {
     //     $message = "Your contact information is received successfully.";
-    //     $type = "success";
+    //     $type == "success";
     // }
 
     $conn = mysqli_connect("localhost", "root", "", "resumeresponse") or die("Connection Error: " . mysqli_error($conn));
