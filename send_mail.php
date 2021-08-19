@@ -12,10 +12,10 @@ if (!empty($_POST["submit"])) {
         $type = "success";
     }
 
-    $conn = mysqli_connect("localhost", "root", "", "resumeresponse") or die("Connection Error: " . mysqli_error($conn));
-    mysqli_query($conn, "INSERT INTO contacts (name, phone, email, subject , message) VALUES ('" . $name . "', '" . $email . "','" . $subject . "','" . $msg_content . "')");
-    $insert_id = mysqli_insert_id($conn);
-    if (!empty($insert_id)) {
-        $message = "Your contact information is saved successfully";
-    }
+    // $conn = mysqli_connect("localhost", "root", "", "resumeresponse") or die("Connection Error: " . mysqli_error($conn));
+    // mysqli_query($conn, "INSERT INTO contacts (name, phone, email, subject , message) VALUES ('" . $name . "', '" . $email . "','" . $subject . "','" . $msg_content . "')");
+    // $insert_id = mysqli_insert_id($conn);
+    // if (!empty($insert_id)) {
+    //     $message = "Your contact information is saved successfully";
+    // }
 }
