@@ -443,11 +443,10 @@
 					$subject = $_POST["subject"];
 					$msg_content = $_POST["msg_content"];
 
-					$conn = mysqli_connect("localhost", "root", "", "resumeresponse") or die("Connection Error: " . mysqli_error($conn));
-					mysqli_query($conn, "INSERT INTO contacts (name, email,subject,msg_content) VALUES ('" . $name . "', '" . $email . "','" . $subject . "','" . $msg_content . "')");
-					$insert_id = mysqli_insert_id($conn);
-				}
-				if (!empty($insert_id)) {
+					// $conn = mysqli_connect("localhost", "root", "", "resumeresponse") or die("Connection Error: " . mysqli_error($conn));
+					// mysqli_query($conn, "INSERT INTO contacts (name, email,subject,msg_content) VALUES ('" . $name . "', '" . $email . "','" . $subject . "','" . $msg_content . "')");
+					// $insert_id = mysqli_insert_id($conn);
+
 					$report = "Your contact information is saved successfully.";
 					$type = "success";
 					$count = 0;
