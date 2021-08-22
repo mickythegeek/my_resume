@@ -89,17 +89,10 @@
 		<div class="main-content pull-right">
 
 
+
 			<!-- Section About -->
 			<section id="about" class="about">
-				<div id="statusMessage">
-					<?php
-					if (!empty($message)) {
-					?>
-						<p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
-					<?php
-					}
-					?>
-				</div>
+
 
 				<div class="section-header">
 					<h2>About Me</h2>
@@ -430,22 +423,68 @@
 						<input type="submit" name="submit" id="submit" value="Send Message" class="btn btn-default pull-left"><!-- Send Button -->
 
 					</div>
+					<div id="statusMessage">
+						<?php
+						if (!empty($message)) {
+						?>
+							<p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
+						<?php
+						}
+
+						?>
+					</div>
 
 				</form>
 				<?php
+
 				if (!empty($_POST["submit"])) {
 					$name = $_POST["name"];
 					$email = $_POST["email"];
 					$subject = $_POST["subject"];
 					$msg_content = $_POST["msg_content"];
 
-					// $conn = mysqli_connect("localhost", "root", "", "resumeresponse") or die("Connection Error: " . mysqli_error($conn));
-					// mysqli_query($conn, "INSERT INTO contacts (name, email,subject,msg_content) VALUES ('" . $name . "', '" . $email . "','" . $subject . "','" . $msg_content . "')");
-					// $insert_id = mysqli_insert_id($conn);
-					//if(!empty($insert_id)) {
-					$message = "Your contact information is saved successfully.";
-					$type = "success";
+					$conn = mysqli_connect("localhost", "root", "", "resumeresponse") or die("Connection Error: " . mysqli_error($conn));
+					mysqli_query($conn, "INSERT INTO contacts (name, email,subject,msg_content) VALUES ('" . $name . "', '" . $email . "','" . $subject . "','" . $msg_content . "')");
+					$insert_id = mysqli_insert_id($conn);
 				}
+				if (!empty($insert_id)) {
+					$report = "Your contact information is saved successfully.";
+					$type = "success";
+					$count = 0;
+					$report = "Gracias," . $name . "😙";
+					echo Alert();
+				}
+
+
+				function Alert()
+				{
+					global $report, $count;
+
+					echo '<script>setTimeout(function() {
+            						$("#refresh").fadeOut(3000);
+        							}, 3000);
+    						  </script>';
+					if ($count > 0) {
+						echo '
+            	<div id="refresh"  class="alert bg-danger" style="position:fixed; top:10px; right:10px; z-index:10000; width: auto;">
+				<i class="icon fa fa-ban text-white"> &nbsp;' . $report . '</i></div>';
+					} else {
+						echo '<div id="refresh"  class="alert bg-success" style="position:fixed; top:10px; right:10px; z-index:10000; width: auto;">
+				<i class="icon fa fa-check text-white"> &nbsp;' . $report . '</i></div>';
+					}
+					return;
+				}
+
+				if (isset($report)) {
+					echo "<script>
+					$(function() {
+						$('body').on('click', '#submit', function() {
+							document.body.innerHTML('Thank you for contacting me!')
+						})
+					})
+				</script>";
+				}
+
 
 
 				?>
@@ -478,7 +517,7 @@
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<script type="text/javascript" src="assets/js/smoothscroll.min.js"></script>
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="assets/js/form.js"></script>
+
 
 </body>
 
