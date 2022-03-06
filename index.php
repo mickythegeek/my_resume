@@ -103,7 +103,7 @@
 				<div class="intro">
 
 					<p>
-						Hello, My name is Michael David. I am an energetic and passionate college student working towards a Bachelor's degree in
+						Hello, My name is <strong>Michael David</strong>. I am an energetic and passionate college student working towards a Bachelor's degree in
 						COMPUTER ENGINEERING at the FEDERAL UNIVERSITY OF TECHNOLOGY, AKURE. I am motivated and enthusiastic by new challenges and tasks and take excellent approach to
 						achieve success in all projects.
 					</p>
@@ -180,61 +180,18 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="col-md-6 col-sm-6 col-xs-12 item">
 								<div class="skill-info clearfix">
-									<h3 class="pull-left">JavaScript</h3>
-									<span class="pull-right">55%</span>
-								</div>
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:55%">
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6 col-sm-6 col-xs-12 item">
-								<div class="skill-info clearfix">
-									<h3 class="pull-left">JQUERY</h3>
+									<h3 class="pull-left">Python</h3>
 									<span class="pull-right">50%</span>
 								</div>
 								<div class="progress">
-									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+									<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:60%">
 									</div>
 								</div>
 							</div>
 
-							<div class="col-md-6 col-sm-6 col-xs-12 item">
-								<div class="skill-info clearfix">
-									<h3 class="pull-left">AJAX</h3>
-									<span class="pull-right">45%</span>
-								</div>
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:45%">
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6 col-sm-6 col-xs-12 item">
-								<div class="skill-info clearfix">
-									<h3 class="pull-left">Photoshop</h3>
-									<span class="pull-right">50%</span>
-								</div>
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6 col-sm-6 col-xs-12 item">
-								<div class="skill-info clearfix">
-									<h3 class="pull-left">Illustrator</h3>
-									<span class="pull-right">60%</span>
-								</div>
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-									</div>
-								</div>
-							</div>
+							
 
 
 
@@ -447,10 +404,10 @@
 					// mysqli_query($conn, "INSERT INTO contacts (name, email,subject,msg_content) VALUES ('" . $name . "', '" . $email . "','" . $subject . "','" . $msg_content . "')");
 					// $insert_id = mysqli_insert_id($conn);
 
-					$report = "Your contact information is saved successfully.";
+					$stmt = "" . "🙂";
 					$type = "success";
 					$count = 0;
-					$report = "Gracias," . $name . "😙";
+					$report = "I appreciate your message," . $name . "😙" . "<br>" . "Danke!🙏";
 					echo Alert();
 				}
 
